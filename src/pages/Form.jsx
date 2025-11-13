@@ -4,13 +4,13 @@ import { useSelector } from 'react-redux'
 import Objective from '../components/forms/Objective'
 import Skills from '../components/forms/Skills'
 import Projects from '../components/forms/Projects'
+import Education from '../components/forms/Education'
 
 function Form() {
 
     const formRenderStatus = useSelector((state)=>state.userData.formRenders)
 
 
-    console.log(formRenderStatus,'form render status')
   return (
     <div className='h-screen flex justify-center items-center'>
 
@@ -20,10 +20,10 @@ function Form() {
 
     {formRenderStatus.SKILLS && <Skills />}
 
-    {formRenderStatus.PROJECTS && <Projects />}
+    {/* {formRenderStatus.PROJECTS && <Projects />}
 
 
-    {formRenderStatus.EDUCATION && <Objective />}
+    {formRenderStatus.EDUCATION && <Education />} */}
 
 
 

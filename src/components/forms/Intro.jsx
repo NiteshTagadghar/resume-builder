@@ -10,14 +10,13 @@ function Intro() {
 
     function getData(e) {
         e.preventDefault()
-        
+
         // Data update in store
         dispatch(updateIntro(userDetail))
 
         // 
     }
 
-    console.log(storedDetails)
     return (
         <div>
             <form className="max-w-md mx-auto" onSubmit={getData}>

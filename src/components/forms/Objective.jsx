@@ -13,7 +13,7 @@ function Objective() {
         // Save data in store
         dispatch(updateObjective(objective))
 
-        
+
     }
     return (
         <div>
@@ -36,6 +36,8 @@ function Objective() {
                     >
                         Objective
                     </label>
+                    
+                    {false && <p className='text-red-500'>Max charecter limit is 200</p>}
                 </div>
                 <button
                     type="submit"
